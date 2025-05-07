@@ -1,0 +1,133 @@
+:root {
+    --primary-red: #c0392b;       /* Bold Red */
+    --accent-brown: #f3e5ab;      /* Light Brown */
+    --text-color: #000000;        /* Black */
+    --heading-font: 'Playfair Display', serif;
+    --body-font: 'Poppins', sans-serif;
+}
+
+/* Body Setup */
+body {
+    font-family: var(--body-font);
+    background-color: var(--accent-brown);
+    color: var(--text-color);
+    margin-top: 70px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--primary-red);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+    font-family: var(--heading-font);
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgb(193, 140, 140) !important;
+}
+.navbar-nav .nav-link {
+    color: rgb(203, 166, 166);
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.navbar-nav .nav-link:hover {
+    color: var(--accent-brown);
+}
+
+/* Hero Section (Homepage) */
+.hero {
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(192, 57, 43, 0.7); /* red overlay */
+    background-blend-mode: multiply;
+    color: rgb(174, 123, 123);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 4rem;
+    font-family: var(--heading-font);
+    color: rgb(200, 147, 147);
+    text-shadow: 2px 2px 4px black;
+}
+.hero p {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #957040;
+}
+.hero .btn {
+    background-color: rgb(214, 177, 177);
+    color: var(--primary-red);
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+}
+.hero .btn:hover {
+    background-color: var(--primary-red);
+    color: rgb(152, 71, 71);
+}
+
+/* Headings */
+h2, h3, h4, h5 {
+    color: var(--primary-red);
+    font-family: var(--heading-font);
+}
+
+/* Sections */
+section {
+    padding: 60px 0;
+}
+
+/* Product / Image Styling */
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+img:hover {
+    transform: scale(1.05);
+}
+
+/* Forms */
+form .form-label {
+    font-weight: bold;
+    color: var(--primary-red);
+}
+form .form-control, form textarea {
+    border-radius: 8px;
+    padding: 10px;
+    border: 1px solid #b8a4a4;
+}
+form button {
+    background-color: var(--primary-red);
+    color: rgb(175, 141, 141);
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+}
+form button:hover {
+    background-color: #96281b;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-red);
+    color: rgb(190, 185, 205);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+}
+
+/* Responsive Hero Section */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .hero p {
+        font-size: 1rem;
+    }
+}
